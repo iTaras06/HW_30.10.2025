@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body 
+    {
+        background-color: #f3f3f3;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin: 40px;
+    }
+    .pricing 
+    {
+        margin: 0 auto;
+        border-collapse: separate; 
+        border-spacing: 24px 0;   
+        table-layout: fixed;    
+        width: auto;
+    }
+    .pricing td 
+    {
+        width: 280px;              
+        padding: 12px 0px;
+        background-color:white;
+        border: none;
+    }
+    .top 
+    {
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+    }
+    .bottom 
+    {
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        padding-bottom: 20px;
+    }
+    .row_title td 
+    {
+        font-size: 20px;
+        position: relative;
+        padding-top: 30px;
+    }
+    .row_title .enterprise::after 
+    {
+        content: "";
+        display: block;
+        height: 4px;
+        background-color: #e63946;
+        margin-top: 10px;
+    }
+    .row_title .professional::after 
+    {
+        content: "";
+        display: block;
+        height: 4px;
+        background-color: #f4a261;
+        margin-top: 10px;
+    }
+    .row_title .standard::after 
+    {
+        content: "";
+        display: block;
+        height: 4px;
+        background-color: #296076;
+        margin-top: 10px;
+    }
+    .row_title .basic::after 
+    {
+        content: "";
+        display: block;
+        height: 4px;
+        background-color: #4dca5a;
+        margin-top: 10px;
+    }
+    .row_price td {font-size: 60px;}
+    .row_sub td 
+    {
+        color:rgb(204, 200, 200);
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+    .row_button td 
+    {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+    button 
+    {
+        color:white;
+        border: none;
+        border-radius: 6px;
+        padding: 15px 40px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .btn_enterprise { background-color: #e63946; }
+    .btn_professional { background-color: #f4a261; }
+    .btn_standard { background-color: #296076; }
+    .btn_basic { background-color: #4dca5a; }
+
+    button:hover {opacity: 0.70;}
+</style>
+<body>
+    <table class="pricing">
+        <tr class="row_title">
+            <td class="enterprise top">ENTERPRISE</td>
+            <td class="professional top">PROFESSIONAL</td>
+            <td class="standard top">STANDARD</td>
+            <td class="basic top">BASIC</td>
+        </tr>
+
+        <tr class="row_price">
+            <td>$69</td><td>$29</td><td>$19</td><td>$9</td>
+        </tr>
+
+        <tr class="row_sub">
+            <td>per month</td><td>per month</td><td>per month</td><td>per month</td>
+        </tr>
+        <tr>
+            <td>10GB disk space</td><td>5GB disk space</td><td>3GB disk space</td><td>1GB disk space</td>
+        </tr>
+
+        <tr>
+            <td>100GB monthly bandwidth</td><td>60GB monthly bandwidth</td><td>30GB monthly bandwidth</td><td>10GB monthly bandwidth</td>
+        </tr>
+
+        <tr>
+            <td>20 email accounts</td><td>10 email accounts</td><td>5 email accounts</td><td>2 email accounts</td>
+        </tr>
+
+        <tr>
+            <td>Unlimited subdomens</td><td>Unlimited subdomens</td><td>Unlimited subdomens</td><td>Unlimited subdomens</td>
+        </tr>
+
+        <tr class="row_button">
+            <td class="bottom"><button class="btn_enterprise">BUY</button></td>
+            <td class="bottom"><button class="btn_professional">BUY</button></td>
+            <td class="bottom"><button class="btn_standard">BUY</button></td>
+            <td class="bottom"><button class="btn_basic">BUY</button></td>
+        </tr>
+    </table>
+</body>
+</html>
